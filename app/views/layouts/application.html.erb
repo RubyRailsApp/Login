@@ -11,6 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%# 1. Navbar %>
+    <%= render "layouts/navbar"  %>
+
+    <div class="container" style="height: 20em;" >
+      <%= yield %>
+    </div>
+
+    <%# 3. Footer %>
+    <%#= render "layouts/footer"  %>
   </body>
 </html>
